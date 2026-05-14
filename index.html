@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en" class="dark" data-country="{{CF_IPCOUNTRY}}">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>WC2026 Players / Top Teams | World Cup 2026 Editorial Portal</title>
+  <meta name="description" content="Explore standout players, top national teams, World Cup 2026 format notes, and host city coverage in a dark editorial football portal." />
+  <link rel="canonical" href="https://example.com/" />
+  <meta property="og:title" content="WC2026 Players / Top Teams" />
+  <meta property="og:description" content="A dark editorial portal covering standout players, top teams, tournament facts, and host cities for World Cup 2026." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://example.com/" />
+  <meta property="og:image" content="https://picsum.photos/seed/wc2026editorial/1600/900" />
+  <meta name="theme-color" content="#0b0f14" />
+  <meta name="x-geo-language-strategy" content="Server-provided country header bridge with browser-language fallback" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    window.__SITE_I18N__ = {
+      defaultLang: 'en',
+      supportedLangs: ['en', 'es', 'fr', 'de', 'pt', 'ru'],
+      countryToLang: {
+        US: 'en', CA: 'en', GB: 'en', AU: 'en', IE: 'en', NZ: 'en',
+        MX: 'es', ES: 'es', AR: 'es', CO: 'es', CL: 'es', PE: 'es', UY: 'es',
+        FR: 'fr', BE: 'fr', CH: 'fr',
+        DE: 'de', AT: 'de',
+        BR: 'pt', PT: 'pt',
+        RU: 'ru', BY: 'ru', KZ: 'ru'
+      }
+    };
+  </script>
+  <script>
+    (function () {
+      var cfg = window.__SITE_I18N__;
+      var path = window.location.pathname;
+      var langPrefixMatch = path.match(/^\/(en|es|fr|de|pt|ru)(\/|$)/i);
+      if (langPrefixMatch) return;
+      if (path !== '/' && path !== '/index.html') return;
+
+      function pickByBrowser() {
+        var raw = (navigator.language || navigator.userLanguage || cfg.defaultLang).toLowerCase();
+        var short = raw.slice(0, 2);
+        return cfg.supportedLangs.indexOf(short) !== -1 ? short : cfg.defaultLang;
+      }
+
+      var country = document.documentElement.getAttribute('data-country') || '';
+      var targetLang = cfg.countryToLang[country] || pickByBrowser();
+      if (!targetLang || targetLang === cfg.defaultLang) return;
+      window.location.replace('/' + targetLang + '/');
+    })();
+  </script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            page: '#0B0F14',
+            shell: '#11161D',
+            surface: '#161C24',
+            surface2: '#1B2330',
+            inset: '#0F141B',
+            line: '#273243',
+            textPrimary: '#F3F5F7',
+            textSecondary: '#B8C1CC',
+            textMuted: '#7E8A97',
+            accent: '#D72638',
+            accentDeep: '#8F1623',
+            gold: '#C8A85D',
+            ice: '#7FA9C9'
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Barlow Condensed', 'sans-serif']
+          },
+          boxShadow: {
+            panel: '0 16px 40px rgba(0,0,0,0.24)',
+            soft: '0 10px 30px rgba(0,0,0,0.18)'
+          },
+          backgroundImage: {
+            'hero-overlay': 'linear-gradient(180deg, rgba(11,15,20,0.35) 0%, rgba(11,15,20,0.72) 55%, rgba(11,15,20,0.96) 100%)',
+            'card-fade': 'linear-gradient(180deg, rgba(11,15,20,0) 0%, rgba(11,15,20,0.9) 100%)'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-page text-textPrimary font-sans antialiased selection:bg-accent/30 selection:text-white">
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[100] focus:rounded-md focus:bg-accent focus:px-4 focus:py-2 focus:text-white">Skip to content</a>
+
+  <header class="sticky top-0 z-50 border-b border-white/10 bg-shell/95 backdrop-blur">
+    <div class="mx-auto flex max-w-7xl items-center justify-between gap-6 px-4 py-4 sm:px-6 lg:px-8">
+      <a href="/" class="flex items-end gap-3" aria-label="WC2026 Players / Top Teams home">
+        <span class="font-display text-3xl uppercase tracking-wide text-white">WC2026</span>
+        <span class="hidden text-xs font-semibold uppercase tracking-[0.24em] text-textMuted sm:block">Players / Top Teams</span>
+      </a>
+
+      <nav aria-label="Primary navigation" class="hidden items-center gap-6 md:flex">
+        <a href="/" class="text-sm font-semibold text-white">Home</a>
+        <a href="/players/" class="text-sm font-medium text-textSecondary transition hover:text-white">Players</a>
+        <a href="/teams/" class="text-sm font-medium text-textSecondary transition hover:text-white">Teams</a>
+        <a href="/world-cup-2026-format/" class="text-sm font-medium text-textSecondary transition hover:text-white">Format</a>
+        <a href="/host-cities/" class="text-sm font-medium text-textSecondary transition hover:text-white">Host Cities</a>
+        <a href="/faq/" class="text-sm font-medium text-textSecondary transition hover:text-white">FAQ</a>
+      </nav>
+
+      <div class="flex items-center gap-3">
+        <button type="button" aria-label="Search" class="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-white/10 bg-white/5 text-textSecondary transition hover:border-white/20 hover:bg-white/10 hover:text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        </button>
+        <button type="button" aria-label="Open menu" class="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-white/10 bg-white/5 text-textSecondary md:hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="border-b border-white/10 bg-page">
+      <div class="mx-auto max-w-7xl px-4 py-4 sm:px-6 lg:px-8">
+        <div class="rounded-2xl border border-dashed border-white/15 bg-inset px-4 py-4 sm:px-6">
+          <div class="mb-3 flex items-center justify-between gap-3">
+            <span class="text-[11px] font-semibold uppercase tracking-[0.26em] text-textMuted">Advertisement</span>
+            <span class="text-[11px] text-textMuted">Top leaderboard slot</span>
+          </div>
+          <div class="flex min-h-[110px] items-center justify-center rounded-xl border border-white/10 bg-white/[0.03] text-center sm:min-h-[140px]">
+            <div>
+              <p class="font-display text-2xl uppercase tracking-wide text-white sm:text-3xl">970 × 250 / 728 × 90</p>
+              <p class="mt-2 text-sm text-textSecondary">Reserved premium banner area under the sticky header.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="relative overflow-hidden border-b border-white/10 bg-shell">
+      <div class="absolute inset-0 bg-hero-overlay"></div>
+      <div class="absolute inset-0 bg-[url('https://avatars.mds.yandex.net/i?id=b556e53a91f1d4398f2f68d756c4b8bb_l-7761683-images-thumbs&n=13')] bg-cover bg-center opacity-30"></div>
+      <div class="relative mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-6 sm:py-16 lg:grid-cols-[minmax(0,1.2fr)_340px] lg:px-8 lg:py-24">
+        <div class="max-w-3xl">
+          <p class="mb-4 text-[11px] font-semibold uppercase tracking-[0.28em] text-gold">World Cup 2026 editorial guide</p>
+          <h1 class="max-w-4xl font-display text-5xl uppercase leading-none text-white sm:text-6xl lg:text-7xl">The players, national teams, and tournament context worth following before kickoff.</h1>
+          <p class="mt-5 max-w-2xl text-base leading-7 text-textSecondary sm:text-lg">WC2026 Players / Top Teams is built as a football editorial portal, not a live-score product. It focuses on standout profiles, national-team storylines, host-city context, and tournament structure in one clear reading flow.</p>
+          <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+            <a href="/players/" class="inline-flex min-h-12 items-center justify-center rounded-lg bg-accent px-6 py-3 text-sm font-semibold text-white transition hover:bg-accentDeep">Explore Players</a>
+            <a href="/teams/" class="inline-flex min-h-12 items-center justify-center rounded-lg border border-white/15 bg-white/5 px-6 py-3 text-sm font-semibold text-white transition hover:border-white/25 hover:bg-white/10">Browse Top Teams</a>
+          </div>
+        </div>
+
+        <aside class="rounded-2xl border border-white/10 bg-black/20 p-5 shadow-panel backdrop-blur-sm">
+          <p class="text-[11px] font-semibold uppercase tracking-[0.24em] text-gold">Quick tournament notes</p>
+          <dl class="mt-5 space-y-5">
+            <div class="border-b border-white/10 pb-4">
+              <dt class="text-xs uppercase tracking-[0.2em] text-textMuted">Site focus</dt>
+              <dd class="mt-1 text-base font-semibold text-white">Players, teams, format, and host cities</dd>
+            </div>
+            <div class="border-b border-white/10 pb-4">
+              <dt class="text-xs uppercase tracking-[0.2em] text-textMuted">Editorial angle</dt>
+              <dd class="mt-1 text-base font-semibold text-white">Profiles and context over score widgets</dd>
+            </div>
+            <div>
+              <dt class="text-xs uppercase tracking-[0.2em] text-textMuted">Core navigation</dt>
+              <dd class="mt-1 text-base font-semibold text-white">Players, Teams, Format, Host Cities, FAQ</dd>
+            </div>
+          </dl>
+
+        <div class="mt-4 rounded-xl border border-white/10 bg-white/[0.03] p-4">
+          <p class="text-[11px] font-semibold uppercase tracking-[0.22em] text-textMuted">Localization ready</p>
+          <p class="mt-2 text-sm leading-6 text-textSecondary">Language routing can use an origin-injected country code and falls back to the browser language when no geo signal is available.</p>
+        </div>
+        </aside>
+      </div>
+    </section>
+
+    <section class="bg-page py-14 sm:py-16">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="mb-8 flex items-end justify-between gap-4">
+          <div>
+            <p class="text-[11px] font-semibold uppercase tracking-[0.26em] text-gold">Featured players</p>
+            <h2 class="mt-2 font-display text-3xl uppercase text-white sm:text-4xl">Profiles driving the pre-tournament conversation</h2>
+          </div>
+          <a href="/players/" class="hidden text-sm font-semibold text-textSecondary transition hover:text-white sm:inline">View all players</a>
+        </div>
+
+        <div class="grid gap-5 md:grid-cols-2 xl:grid-cols-4">
+          <article class="group overflow-hidden rounded-2xl border border-white/10 bg-surface transition hover:border-white/20 hover:bg-surface2">
+            <a href="/players/jude-bellingham/" class="block">
+              <div class="relative aspect-[4/5] overflow-hidden bg-inset">
+                <img src="https://picsum.photos/seed/jude-bellingham-wc2026/720/900" alt="Editorial portrait placeholder for Jude Bellingham" width="720" height="900" loading="lazy" class="h-full w-full object-cover transition duration-500 group-hover:scale-[1.03]" />
+                <div class="absolute inset-x-0 bottom-0 h-32 bg-card-fade"></div>
+                <div class="absolute inset-x-0 bottom-0 p-4">
+                  <p class="text-[11px] font-semibold uppercase tracking-[0.22em] text-gold">England · Midfielder</p>
+                  <h3 class="mt-1 font-display text-3xl uppercase leading-none text-white">Jude Bellingham</h3>
+                </div>
+              </div>
+              <div class="p-5">
+                <p class="text-sm leading-6 text-textSecondary">A modern central figure whose presence shapes both tempo and expectation for England heading into 2026.</p>
+                <span class="mt-4 inline-flex text-sm font-semibold text-white">View player profile</span>
+              </div>
+            </a>
+          </article>
+
+          <article class="group overflow-hidden rounded-2xl border border-white/10 bg-surface transition hover:border-white/20 hover:bg-surface2">
+            <a href="/players/kylian-mbappe/" class="block">
+              <div class="relative aspect-[4/5] overflow-hidden bg-inset">
+                <img src="https://picsum.photos/seed/kylian-mbappe-wc2026/720/900" alt="Editorial portrait placeholder for Kylian Mbappe" width="720" height="900" loading="lazy" class="h-full w-full object-cover transition duration-500 group-hover:scale-[1.03]" />
+                <div class="absolute inset-x-0 bottom-0 h-32 bg-card-fade"></div>
+                <div class="absolute inset-x-0 bottom-0 p-4">
+                  <p class="text-[11px] font-semibold uppercase tracking-[0.22em] text-gold">France · Forward</p>
+                  <h3 class="mt-1 font-display text-3xl uppercase leading-none text-white">Kylian Mbappé</h3>
+                </div>
+              </div>
+              <div class="p-5">
+                <p class="text-sm leading-6 text-textSecondary">Few players combine tournament pedigree, pace, and narrative gravity the way Mbappé does.</p>
+                <span class="mt-4 inline-flex text-sm font-semibold text-white">View player profile</span>
+              </div>
+            </a>
+          </article>
+
+          <article class="group overflow-hidden rounded-2xl border border-white/10 bg-surface transition hover:border-white/20 hover:bg-surface2">
+            <a href="/players/vinicius-junior/" class="block">
+              <div class="relative aspect-[4/5] overflow-hidden bg-inset">
+                <img src="https://picsum.photos/seed/vinicius-junior-wc2026/720/900" alt="Editorial portrait placeholder for Vinicius Junior" width="720" height="900" loading="lazy" class="h-full w-full object-cover transition duration-500 group-hover:scale-[1.03]" />
+                <div class="absolute inset-x-0 bottom-0 h-32 bg-card-fade"></div>
+                <div class="absolute inset-x-0 bottom-0 p-4">
+                  <p class="text-[11px] font-semibold uppercase tracking-[0.22em] text-gold">Brazil · Winger</p>
+                  <h3 class="mt-1 font-display text-3xl uppercase leading-none text-white">Vinícius Júnior</h3>
+                </div>
+              </div>
+              <div class="p-5">
+                <p class="text-sm leading-6 text-textSecondary">Direct, disruptive, and often decisive, he carries the kind of attacking weight that defines tournament headlines.</p>
+                <span class="mt-4 inline-flex text-sm font-semibold text-white">View player profile</span>
+              </div>
+            </a>
+          </article>
+
+          <article class="group overflow-hidden rounded-2xl border border-white/10 bg-surface transition hover:border-white/20 hover:bg-surface2">
+            <a href="/players/alphonso-davies/" class="block">
+              <div class="relative aspect-[4/5] overflow-hidden bg-inset">
+                <img src="https://picsum.photos/seed/alphonso-davies-wc2026/720/900" alt="Editorial portrait placeholder for Alphonso Davies" width="720" height="900" loading="lazy" class="h-full w-full object-cover transition duration-500 group-hover:scale-[1.03]" />
+                <div class="absolute inset-x-0 bottom-0 h-32 bg-card-fade"></div>
+                <div class="absolute inset-x-0 bottom-0 p-4">
+                  <p class="text-[11px] font-semibold uppercase tracking-[0.22em] text-gold">Canada · Defender</p>
+                  <h3 class="mt-1 font-display text-3xl uppercase leading-none text-white">Alphonso Davies</h3>
+                </div>
+              </div>
+              <div class="p-5">
+                <p class="text-sm leading-6 text-textSecondary">For a host nation seeking identity and momentum, Davies remains the defining face of ambition.</p>
+                <span class="mt-4 inline-flex text-sm font-semibold text-white">View player profile</span>
+              </div>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-page pb-14 sm:pb-16">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="rounded-[28px] border border-dashed border-white/15 bg-shell p-4 sm:p-6">
+          <div class="mb-3 flex items-center justify-between gap-3">
+            <span class="text-[11px] font-semibold uppercase tracking-[0.26em] text-textMuted">Advertisement</span>
+            <span class="text-[11px] text-textMuted">Mid-content billboard</span>
+          </div>
+          <div class="flex min-h-[180px] items-center justify-center rounded-2xl border border-white/10 bg-white/[0.03] text-center sm:min-h-[240px]">
+            <div>
+              <p class="font-display text-3xl uppercase tracking-wide text-white sm:text-5xl">Billboard ad slot</p>
+              <p class="mt-2 text-sm text-textSecondary">High-visibility module between key editorial sections.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="border-y border-white/10 bg-shell py-14 sm:py-16">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="mb-8 flex items-end justify-between gap-4">
+          <div>
+            <p class="text-[11px] font-semibold uppercase tracking-[0.26em] text-gold">Top teams</p>
+            <h2 class="mt-2 font-display text-3xl uppercase text-white sm:text-4xl">National sides built for deep tournament runs</h2>
+          </div>
+          <a href="/teams/" class="hidden text-sm font-semibold text-textSecondary transition hover:text-white sm:inline">View all teams</a>
+        </div>
+
+        <div class="grid gap-5 lg:grid-cols-3">
+          <article class="rounded-2xl border border-white/10 bg-surface p-6 transition hover:border-white/20 hover:bg-surface2">
+            <a href="/teams/france/" class="block">
+              <div class="mb-5 flex items-start justify-between gap-4">
+                <div>
+                  <p class="text-[11px] font-semibold uppercase tracking-[0.22em] text-ice">UEFA</p>
+                  <h3 class="mt-2 font-display text-4xl uppercase leading-none text-white">France</h3>
+                </div>
+                <span class="rounded-full border border-white/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.18em] text-gold">Contender</span>
+              </div>
+              <p class="text-sm leading-6 text-textSecondary">A team with proven tournament identity, elite attacking options, and enough depth to handle shifting match states.</p>
+              <div class="mt-5 flex flex-wrap gap-2 text-xs text-textMuted">
+                <span class="rounded-full bg-white/5 px-3 py-1">Mbappé</span>
+                <span class="rounded-full bg-white/5 px-3 py-1">Midfield depth</span>
+                <span class="rounded-full bg-white/5 px-3 py-1">Knockout experience</span>
+              </div>
+            </a>
+          </article>
+
+          <article class="rounded-2xl border border-white/10 bg-surface p-6 transition hover:border-white/20 hover:bg-surface2">
+            <a href="/teams/brazil/" class="block">
+              <div class="mb-5 flex items-start justify-between gap-4">
+                <div>
+                  <p class="text-[11px] font-semibold uppercase tracking-[0.22em] text-ice">CONMEBOL</p>
+                  <h3 class="mt-2 font-display text-4xl uppercase leading-none text-white">Brazil</h3>
+                </div>
+                <span class="rounded-full border border-white/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.18em] text-gold">Heavyweight</span>
+              </div>
+              <p class="text-sm leading-6 text-textSecondary">Brazil arrives with emotional gravity every cycle, but the story is always about balance between flair and structure.</p>
+              <div class="mt-5 flex flex-wrap gap-2 text-xs text-textMuted">
+                <span class="rounded-full bg-white/5 px-3 py-1">Vinícius Júnior</span>
+                <span class="rounded-full bg-white/5 px-3 py-1">Wide threat</span>
+                <span class="rounded-full bg-white/5 px-3 py-1">Big-stage pressure</span>
+              </div>
+            </a>
+          </article>
+
+          <article class="rounded-2xl border border-white/10 bg-surface p-6 transition hover:border-white/20 hover:bg-surface2">
+            <a href="/teams/argentina/" class="block">
+              <div class="mb-5 flex items-start justify-between gap-4">
+                <div>
+                  <p class="text-[11px] font-semibold uppercase tracking-[0.22em] text-ice">CONMEBOL</p>
+                  <h3 class="mt-2 font-display text-4xl uppercase leading-none text-white">Argentina</h3>
+                </div>
+                <span class="rounded-full border border-white/10 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.18em] text-gold">Elite core</span>
+              </div>
+              <p class="text-sm leading-6 text-textSecondary">Tournament maturity, control without panic, and a clear identity keep Argentina central to every serious preview.</p>
+              <div class="mt-5 flex flex-wrap gap-2 text-xs text-textMuted">
+                <span class="rounded-full bg-white/5 px-3 py-1">Defensive discipline</span>
+                <span class="rounded-full bg-white/5 px-3 py-1">System coherence</span>
+                <span class="rounded-full bg-white/5 px-3 py-1">Big-match edge</span>
+              </div>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-page py-14 sm:py-16">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="mb-8 max-w-3xl">
+          <p class="text-[11px] font-semibold uppercase tracking-[0.26em] text-gold">Quick facts</p>
+          <h2 class="mt-2 font-display text-3xl uppercase text-white sm:text-4xl">Why the tournament context matters on this homepage</h2>
+          <p class="mt-3 text-base leading-7 text-textSecondary">The homepage should do more than surface names. It should help readers move from discovery to context fast, so the site feels like a coherent football publication rather than a collection of profile pages.</p>
+        </div>
+        <div class="grid gap-5 md:grid-cols-2 xl:grid-cols-4">
+          <div class="rounded-2xl border border-white/10 bg-surface p-6">
+            <p class="text-[11px] font-semibold uppercase tracking-[0.22em] text-gold">Navigation</p>
+            <h3 class="mt-3 font-display text-3xl uppercase text-white">5 core routes</h3>
+            <p class="mt-2 text-sm leading-6 text-textSecondary">Players, Teams, Format, Host Cities, and FAQ anchor the whole experience.</p>
+          </div>
+          <div class="rounded-2xl border border-white/10 bg-surface p-6">
+            <p class="text-[11px] font-semibold uppercase tracking-[0.22em] text-gold">Content model</p>
+            <h3 class="mt-3 font-display text-3xl uppercase text-white">Entity-led</h3>
+            <p class="mt-2 text-sm leading-6 text-textSecondary">Player and team cards feed deeper internal pages with clean SEO-friendly linking paths.</p>
+          </div>
+          <div class="rounded-2xl border border-white/10 bg-surface p-6">
+            <p class="text-[11px] font-semibold uppercase tracking-[0.22em] text-gold">Visual tone</p>
+            <h3 class="mt-3 font-display text-3xl uppercase text-white">Editorial dark</h3>
+            <p class="mt-2 text-sm leading-6 text-textSecondary">A serious football portal should feel calm, premium, and structured rather than reactive.</p>
+          </div>
+          <div class="rounded-2xl border border-white/10 bg-surface p-6">
+            <p class="text-[11px] font-semibold uppercase tracking-[0.22em] text-gold">Ad inventory</p>
+            <h3 class="mt-3 font-display text-3xl uppercase text-white">Built in</h3>
+            <p class="mt-2 text-sm leading-6 text-textSecondary">Large banner zones are framed from the start so monetization does not break the layout later.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="border-y border-white/10 bg-shell py-14 sm:py-16">
+      <div class="mx-auto grid max-w-7xl gap-8 px-4 sm:px-6 lg:grid-cols-[1.1fr_0.9fr] lg:px-8">
+        <div>
+          <p class="text-[11px] font-semibold uppercase tracking-[0.26em] text-gold">Host cities teaser</p>
+          <h2 class="mt-2 font-display text-3xl uppercase text-white sm:text-4xl">The tournament is also a geography story.</h2>
+          <p class="mt-4 max-w-2xl text-base leading-7 text-textSecondary">Host-city coverage should explain how place, travel, atmosphere, and regional identity shape the tournament experience. This section gives the homepage a wider football lens beyond players and contenders.</p>
+          <a href="/host-cities/" class="mt-6 inline-flex min-h-12 items-center justify-center rounded-lg border border-white/15 bg-white/5 px-6 py-3 text-sm font-semibold text-white transition hover:border-white/25 hover:bg-white/10">Explore Host Cities</a>
+        </div>
+        <div class="grid gap-4 sm:grid-cols-2">
+          <a href="/host-cities/" class="rounded-2xl border border-white/10 bg-surface p-5 transition hover:border-white/20 hover:bg-surface2">
+            <p class="text-[11px] font-semibold uppercase tracking-[0.22em] text-ice">United States</p>
+            <h3 class="mt-2 font-display text-3xl uppercase text-white">New York / New Jersey</h3>
+            <p class="mt-2 text-sm leading-6 text-textSecondary">A flagship host setting with scale, symbolism, and global-event energy.</p>
+          </a>
+          <a href="/host-cities/" class="rounded-2xl border border-white/10 bg-surface p-5 transition hover:border-white/20 hover:bg-surface2">
+            <p class="text-[11px] font-semibold uppercase tracking-[0.22em] text-ice">Mexico</p>
+            <h3 class="mt-2 font-display text-3xl uppercase text-white">Mexico City</h3>
+            <p class="mt-2 text-sm leading-6 text-textSecondary">History, altitude, and atmosphere make this one of the defining tournament settings.</p>
+          </a>
+          <a href="/host-cities/" class="rounded-2xl border border-white/10 bg-surface p-5 transition hover:border-white/20 hover:bg-surface2 sm:col-span-2">
+            <p class="text-[11px] font-semibold uppercase tracking-[0.22em] text-ice">Canada</p>
+            <h3 class="mt-2 font-display text-3xl uppercase text-white">Toronto & Vancouver</h3>
+            <p class="mt-2 text-sm leading-6 text-textSecondary">Canada's host-city identity matters because it ties local momentum to the broader North American shape of the event.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-page py-14 sm:py-16">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="mb-8 max-w-3xl">
+          <p class="text-[11px] font-semibold uppercase tracking-[0.26em] text-gold">FAQ teaser</p>
+          <h2 class="mt-2 font-display text-3xl uppercase text-white sm:text-4xl">Short answers to the questions readers ask first</h2>
+          <p class="mt-3 text-base leading-7 text-textSecondary">The FAQ preview should reduce friction, support search intent, and route visitors deeper into the site without turning the homepage into a utility dump.</p>
+        </div>
+        <div class="grid gap-4 lg:grid-cols-2">
+          <div class="rounded-2xl border border-white/10 bg-surface p-5">
+            <h3 class="text-lg font-semibold text-white">Where do the player cards lead?</h3>
+            <p class="mt-2 text-sm leading-6 text-textSecondary">Each featured card points to a dedicated internal player page built for profile-level coverage and contextual linking.</p>
+          </div>
+          <div class="rounded-2xl border border-white/10 bg-surface p-5">
+            <h3 class="text-lg font-semibold text-white">Why is there no live-score module here?</h3>
+            <p class="mt-2 text-sm leading-6 text-textSecondary">Because the homepage is designed as an editorial football portal focused on profiles, teams, and tournament context.</p>
+          </div>
+          <div class="rounded-2xl border border-white/10 bg-surface p-5">
+            <h3 class="text-lg font-semibold text-white">What can readers find besides player profiles?</h3>
+            <p class="mt-2 text-sm leading-6 text-textSecondary">Top teams, host cities, tournament format explainers, and FAQ-driven navigation hubs.</p>
+          </div>
+          <div class="rounded-2xl border border-white/10 bg-surface p-5">
+            <h3 class="text-lg font-semibold text-white">Is the homepage built with ad inventory in mind?</h3>
+            <p class="mt-2 text-sm leading-6 text-textSecondary">Yes. The layout includes top, mid-content, and bottom billboard placements with clearly framed ad containers.</p>
+          </div>
+        </div>
+        <a href="/faq/" class="mt-8 inline-flex min-h-12 items-center justify-center rounded-lg bg-accent px-6 py-3 text-sm font-semibold text-white transition hover:bg-accentDeep">Read the full FAQ</a>
+      </div>
+    </section>
+
+    <section class="bg-page pb-16 sm:pb-20">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="rounded-[28px] border border-dashed border-white/15 bg-shell p-4 sm:p-6">
+          <div class="mb-3 flex items-center justify-between gap-3">
+            <span class="text-[11px] font-semibold uppercase tracking-[0.26em] text-textMuted">Advertisement</span>
+            <span class="text-[11px] text-textMuted">Bottom billboard slot</span>
+          </div>
+          <div class="flex min-h-[190px] items-center justify-center rounded-2xl border border-white/10 bg-white/[0.03] text-center sm:min-h-[250px]">
+            <div>
+              <p class="font-display text-3xl uppercase tracking-wide text-white sm:text-5xl">Bottom billboard</p>
+              <p class="mt-2 text-sm text-textSecondary">Reserved large-format ad zone before the footer.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-white/10 bg-inset">
+    <div class="mx-auto grid max-w-7xl gap-10 px-4 py-12 sm:px-6 lg:grid-cols-[1.1fr_0.9fr_0.9fr] lg:px-8">
+      <div>
+        <p class="font-display text-3xl uppercase text-white">WC2026</p>
+        <p class="mt-3 max-w-md text-sm leading-6 text-textSecondary">An editorial football homepage focused on standout players, leading national teams, tournament context, and host-city coverage.</p>
+      </div>
+      <div>
+        <h2 class="text-xs font-semibold uppercase tracking-[0.22em] text-textMuted">Main routes</h2>
+        <ul class="mt-4 space-y-3 text-sm text-textSecondary">
+          <li><a href="/players/" class="transition hover:text-white">Players</a></li>
+          <li><a href="/teams/" class="transition hover:text-white">Teams</a></li>
+          <li><a href="/world-cup-2026-format/" class="transition hover:text-white">World Cup 2026 Format</a></li>
+          <li><a href="/host-cities/" class="transition hover:text-white">Host Cities</a></li>
+          <li><a href="/faq/" class="transition hover:text-white">FAQ</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="text-xs font-semibold uppercase tracking-[0.22em] text-textMuted">Featured internal pages</h2>
+        <ul class="mt-4 space-y-3 text-sm text-textSecondary">
+          <li><a href="/players/jude-bellingham/" class="transition hover:text-white">Jude Bellingham profile</a></li>
+          <li><a href="/players/kylian-mbappe/" class="transition hover:text-white">Kylian Mbappé profile</a></li>
+          <li><a href="/teams/france/" class="transition hover:text-white">France team page</a></li>
+          <li><a href="/teams/brazil/" class="transition hover:text-white">Brazil team page</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-white/10">
+      <div class="mx-auto flex max-w-7xl flex-col gap-3 px-4 py-5 text-xs text-textMuted sm:px-6 lg:flex-row lg:items-center lg:justify-between lg:px-8">
+        <p>© 2026 WC2026 Players / Top Teams. Editorial football portal homepage concept.</p>
+        <p>Structured for clean internal linking, calm monetization zones, and dark sports presentation.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

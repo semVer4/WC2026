@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en" class="dark" data-country="{{CF_IPCOUNTRY}}">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Teams | WC2026 Players / Top Teams</title>
+  <meta name="description" content="Explore top national teams, favourites, dark horses, and related player links in the WC2026 Players / Top Teams editorial portal." />
+  <link rel="canonical" href="https://example.com/teams/" />
+  <meta property="og:title" content="Teams | WC2026 Players / Top Teams" />
+  <meta property="og:description" content="A dark editorial teams hub covering national-team contenders, dark horses, and links to in-depth team pages." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://example.com/teams/" />
+  <meta property="og:image" content="https://picsum.photos/seed/wc2026teamshub/1600/900" />
+  <meta name="theme-color" content="#0b0f14" />
+  <meta name="x-geo-language-strategy" content="Server-provided country header bridge with browser-language fallback" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    window.__SITE_I18N__ = {
+      defaultLang: 'en',
+      supportedLangs: ['en', 'es', 'fr', 'de', 'pt', 'ru'],
+      countryToLang: {
+        US: 'en', CA: 'en', GB: 'en', AU: 'en', IE: 'en', NZ: 'en',
+        MX: 'es', ES: 'es', AR: 'es', CO: 'es', CL: 'es', PE: 'es', UY: 'es',
+        FR: 'fr', BE: 'fr', CH: 'fr', DE: 'de', AT: 'de', BR: 'pt', PT: 'pt',
+        RU: 'ru', BY: 'ru', KZ: 'ru'
+      }
+    };
+  </script>
+  <script>
+    (function () {
+      var cfg = window.__SITE_I18N__;
+      var path = window.location.pathname;
+      var langPrefixMatch = path.match(/^\/(en|es|fr|de|pt|ru)(\/|$)/i);
+      if (langPrefixMatch) return;
+      function pickByBrowser() {
+        var raw = (navigator.language || navigator.userLanguage || cfg.defaultLang).toLowerCase();
+        var short = raw.slice(0, 2);
+        return cfg.supportedLangs.indexOf(short) !== -1 ? short : cfg.defaultLang;
+      }
+      var country = document.documentElement.getAttribute('data-country') || '';
+      var targetLang = cfg.countryToLang[country] || pickByBrowser();
+      if (!targetLang || targetLang === cfg.defaultLang) return;
+      if (path === '/teams/' || path === '/teams/index.html') {
+        window.location.replace('/' + targetLang + '/teams/');
+      }
+    })();
+  </script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            page: '#0B0F14',
+            shell: '#11161D',
+            surface: '#161C24',
+            surface2: '#1B2330',
+            inset: '#0F141B',
+            line: '#273243',
+            textPrimary: '#F3F5F7',
+            textSecondary: '#B8C1CC',
+            textMuted: '#7E8A97',
+            accent: '#D72638',
+            accentDeep: '#8F1623',
+            gold: '#C8A85D',
+            ice: '#7FA9C9'
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Barlow Condensed', 'sans-serif']
+          },
+          boxShadow: {
+            panel: '0 16px 40px rgba(0,0,0,0.24)',
+            soft: '0 10px 30px rgba(0,0,0,0.18)'
+          },
+          backgroundImage: {
+            'hero-overlay': 'linear-gradient(180deg, rgba(11,15,20,0.40) 0%, rgba(11,15,20,0.82) 56%, rgba(11,15,20,0.96) 100%)',
+            'flag-glow': 'linear-gradient(135deg, rgba(215,38,56,0.18), rgba(127,169,201,0.12))'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-page text-textPrimary font-sans antialiased selection:bg-accent/30 selection:text-white">
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[100] focus:rounded-md focus:bg-accent focus:px-4 focus:py-2 focus:text-white">Skip to content</a>
+
+  <header class="sticky top-0 z-50 border-b border-white/10 bg-shell/95 backdrop-blur">
+    <div class="mx-auto flex max-w-7xl items-center justify-between gap-6 px-4 py-4 sm:px-6 lg:px-8">
+      <a href="/" class="flex items-end gap-3" aria-label="WC2026 Players / Top Teams home">
+        <span class="font-display text-3xl uppercase tracking-wide text-white">WC2026</span>
+        <span class="hidden text-xs font-semibold uppercase tracking-[0.24em] text-textMuted sm:block">Players / Top Teams</span>
+      </a>
+      <nav aria-label="Primary navigation" class="hidden items-center gap-6 md:flex">
+        <a href="/" class="text-sm font-medium text-textSecondary transition hover:text-white">Home</a>
+        <a href="/players/" class="text-sm font-medium text-textSecondary transition hover:text-white">Players</a>
+        <a href="/teams/" class="text-sm font-semibold text-white">Teams</a>
+        <a href="/world-cup-2026-format/" class="text-sm font-medium text-textSecondary transition hover:text-white">Format</a>
+        <a href="/host-cities/" class="text-sm font-medium text-textSecondary transition hover:text-white">Host Cities</a>
+        <a href="/faq/" class="text-sm font-medium text-textSecondary transition hover:text-white">FAQ</a>
+      </nav>
+      <div class="flex items-center gap-3">
+        <button type="button" aria-label="Search" class="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-white/10 bg-white/5 text-textSecondary transition hover:border-white/20 hover:bg-white/10 hover:text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        </button>
+        <button type="button" aria-label="Open menu" class="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-white/10 bg-white/5 text-textSecondary md:hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="relative overflow-hidden border-b border-white/10 bg-shell">
+      <div class="absolute inset-0 bg-hero-overlay"></div>
+      <div class="absolute inset-0 bg-[url('https://picsum.photos/seed/wc2026-teams-hero/1800/1200')] bg-cover bg-center opacity-25"></div>
+      <div class="relative mx-auto grid max-w-7xl gap-10 px-4 py-14 sm:px-6 sm:py-16 lg:grid-cols-[minmax(0,1.2fr)_340px] lg:px-8 lg:py-24">
+        <div class="max-w-3xl">
+          <p class="mb-4 text-[11px] font-semibold uppercase tracking-[0.28em] text-gold">Teams hub</p>
+          <h1 class="font-display text-5xl uppercase leading-none text-white sm:text-6xl lg:text-7xl">National teams, tournament angles, and the sides defining WC2026 expectations.</h1>
+          <p class="mt-5 max-w-2xl text-base leading-7 text-textSecondary sm:text-lg">This page is built as an editorial hub for national teams rather than a score-driven listing. It helps readers compare contenders, spot dark horses, and move from team-level narratives into deeper profiles and related player pages.</p>
+          <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+            <a href="/" class="inline-flex min-h-12 items-center justify-center rounded-lg border border-white/15 bg-white/5 px-6 py-3 text-sm font-semibold text-white transition hover:border-white/25 hover:bg-white/10">Back to Homepage</a>
+            <a href="/players/" class="inline-flex min-h-12 items-center justify-center rounded-lg bg-accent px-6 py-3 text-sm font-semibold text-white transition hover:bg-accentDeep">Explore Players</a>
+          </div>
+        </div>
+        <aside class="rounded-2xl border border-white/10 bg-black/20 p-5 shadow-panel backdrop-blur-sm">
+          <p class="text-[11px] font-semibold uppercase tracking-[0.24em] text-gold">How to use this page</p>
+          <dl class="mt-5 space-y-5">
+            <div class="border-b border-white/10 pb-4">
+              <dt class="text-xs uppercase tracking-[0.2em] text-textMuted">Start here</dt>
+              <dd class="mt-1 text-base font-semibold text-white">Compare favourites and dark horses quickly</dd>
+            </div>
+            <div class="border-b border-white/10 pb-4">
+              <dt class="text-xs uppercase tracking-[0.2em] text-textMuted">Then open</dt>
+              <dd class="mt-1 text-base font-semibold text-white">Dedicated team pages with deeper tournament context</dd>
+            </div>
+            <div>
+              <dt class="text-xs uppercase tracking-[0.2em] text-textMuted">Next step</dt>
+              <dd class="mt-1 text-base font-semibold text-white">Move into related player profiles to connect squads with key names</dd>
+            </div>
+          </dl>
+        </aside>
+      </div>
+    </section>
+
+    <section class="bg-page py-14 sm:py-16">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="mb-8 max-w-3xl">
+          <p class="text-[11px] font-semibold uppercase tracking-[0.26em] text-gold">Intro</p>
+          <h2 class="mt-2 font-display text-3xl uppercase text-white sm:text-4xl">A national-team index built for stories, not score widgets</h2>
+          <p class="mt-3 text-base leading-7 text-textSecondary">World Cup readers rarely arrive thinking only about one match. They want to understand which teams look complete, which teams carry pressure, and which teams might become more dangerous as the tournament unfolds.</p>
+        </div>
+
+        <div class="grid gap-5 lg:grid-cols-[1.15fr_0.85fr]">
+          <article class="overflow-hidden rounded-[28px] border border-white/10 bg-surface shadow-soft">
+            <a href="/teams/france/" class="grid h-full md:grid-cols-[0.95fr_1.05fr]">
+              <div class="relative min-h-[320px] bg-inset bg-flag-glow">
+                <img src="https://avatars.mds.yandex.net/i?id=b556e53a91f1d4398f2f68d756c4b8bb_l-7761683-images-thumbs&n=13" alt="Editorial placeholder visual for France national team" width="900" height="1000" loading="lazy" class="h-full w-full object-cover opacity-85" />
+                <div class="absolute inset-0 bg-gradient-to-t from-page via-page/25 to-transparent"></div>
+                <div class="absolute bottom-0 left-0 p-5">
+                  <p class="text-[11px] font-semibold uppercase tracking-[0.22em] text-gold">Featured team</p>
+                  <h3 class="mt-2 font-display text-5xl uppercase leading-none text-white">France</h3>
+                </div>
+              </div>
+              <div class="p-6 sm:p-8">
+                <p class="text-[11px] font-semibold uppercase tracking-[0.24em] text-ice">UEFA · Tournament contender</p>
+                <p class="mt-4 text-base leading-7 text-textSecondary">Strong teams often arrive with obvious talent. The more interesting question is whether they also arrive with structure, calm, and a sense of what they are under pressure. France remains central because it keeps checking all three boxes.</p>
+                <div class="mt-6 flex flex-wrap gap-2 text-xs text-textMuted">
+                  <span class="rounded-full bg-white/5 px-3 py-1">Elite depth</span>
+                  <span class="rounded-full bg-white/5 px-3 py-1">Big-match experience</span>
+                  <span class="rounded-full bg-white/5 px-3 py-1">Clear knockout ceiling</span>
+                </div>
+                <span class="mt-8 inline-flex text-sm font-semibold text-white">Read full team page</span>
+              </div>
+            </a>
+          </article>
+
+          <div class="grid gap-5">
+            <article class="rounded-2xl border border-white/10 bg-surface p-6">
+              <p class="text-[11px] font-semibold uppercase tracking-[0.22em] text-gold">Why start here</p>
+              <h3 class="mt-3 font-display text-3xl uppercase text-white">See which teams already carry the weight of expectation</h3>
+              <p class="mt-3 text-sm leading-6 text-textSecondary">Use this page to compare leading national sides quickly, scan short editorial summaries, and move into full team profiles built around tournament angle, squad shape, and expectation.</p>
+            </article>
+            <article class="rounded-2xl border border-white/10 bg-surface p-6">
+              <p class="text-[11px] font-semibold uppercase tracking-[0.22em] text-gold">Where to go next</p>
+              <h3 class="mt-3 font-display text-3xl uppercase text-white">Move from teams into key players and broader context</h3>
+              <p class="mt-3 text-sm leading-6 text-textSecondary">Start with favourites, continue with dark horses, then open player profiles to see which individuals most strongly shape each team story.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-page pb-14 sm:pb-16">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="rounded-[28px] border border-dashed border-white/15 bg-shell p-4 sm:p-6">
+          <div class="mb-3 flex items-center justify-between gap-3">
+            <span class="text-[11px] font-semibold uppercase tracking-[0.26em] text-textMuted">Advertisement</span>
+            <span class="text-[11px] text-textMuted">Primary in-content ad slot</span>
+          </div>
+          <div class="flex min-h-[180px] items-center justify-center rounded-2xl border border-white/10 bg-white/[0.03] text-center sm:min-h-[220px]">
+            <div>
+              <p class="font-display text-3xl uppercase tracking-wide text-white sm:text-5xl">In-content billboard</p>
+              <p class="mt-2 text-sm text-textSecondary">Reserved ad area after the top editorial section.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="border-y border-white/10 bg-shell py-14 sm:py-16">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="mb-8 flex items-end justify-between gap-4">
+          <div>
+            <p class="text-[11px] font-semibold uppercase tracking-[0.26em] text-gold">Top national teams</p>
+            <h2 class="mt-2 font-display text-3xl uppercase text-white sm:text-4xl">A grid of sides readers expect to find first</h2>
+          </div>
+          <a href="/players/" class="hidden text-sm font-semibold text-textSecondary transition hover:text-white sm:inline">See related players</a>
+        </div>
+
+        <div class="grid gap-5 md:grid-cols-2 xl:grid-cols-3">
+          <article class="rounded-2xl border border-white/10 bg-surface p-5 transition hover:border-white/20 hover:bg-surface2">
+            <a href="/teams/brazil/" class="block">
+              <div class="mb-4 flex items-start gap-4">
+                <div class="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl border border-white/10 bg-inset text-lg font-bold text-white">BR</div>
+                <div>
+                  <h3 class="font-display text-4xl uppercase text-white">Brazil</h3>
+                  <p class="text-[11px] font-semibold uppercase tracking-[0.22em] text-gold">South America powerhouse</p>
+                </div>
+              </div>
+              <p class="text-sm leading-6 text-textSecondary">Brazil always enters the conversation early, but the real editorial question is whether flair and control can stay aligned deep into the tournament.</p>
+              <p class="mt-4 text-xs uppercase tracking-[0.18em] text-textMuted">Tournament angle: attacking force under pressure</p>
+            </a>
+          </article>
+
+          <article class="rounded-2xl border border-white/10 bg-surface p-5 transition hover:border-white/20 hover:bg-surface2">
+            <a href="/teams/argentina/" class="block">
+              <div class="mb-4 flex items-start gap-4">
+                <div class="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl border border-white/10 bg-inset text-lg font-bold text-white">AR</div>
+                <div>
+                  <h3 class="font-display text-4xl uppercase text-white">Argentina</h3>
+                  <p class="text-[11px] font-semibold uppercase tracking-[0.22em] text-gold">Defending standard-setter</p>
+                </div>
+              </div>
+              <p class="text-sm leading-6 text-textSecondary">This is the kind of team readers trust because structure, emotional control, and match intelligence tend to hold up under tournament stress.</p>
+              <p class="mt-4 text-xs uppercase tracking-[0.18em] text-textMuted">Tournament angle: maturity and system coherence</p>
+            </a>
+          </article>
+
+          <article class="rounded-2xl border border-white/10 bg-surface p-5 transition hover:border-white/20 hover:bg-surface2">
+            <a href="/teams/england/" class="block">
+              <div class="mb-4 flex items-start gap-4">
+                <div class="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl border border-white/10 bg-inset text-lg font-bold text-white">EN</div>
+                <div>
+                  <h3 class="font-display text-4xl uppercase text-white">England</h3>
+                  <p class="text-[11px] font-semibold uppercase tracking-[0.22em] text-gold">Talented European contender</p>
+                </div>
+              </div>
+              <p class="text-sm leading-6 text-textSecondary">England brings enough individual quality to raise expectations every cycle, but the story is always about whether the whole side feels complete at the right moment.</p>
+              <p class="mt-4 text-xs uppercase tracking-[0.18em] text-textMuted">Tournament angle: talent depth versus delivery</p>
+            </a>
+          </article>
+
+          <article class="rounded-2xl border border-white/10 bg-surface p-5 transition hover:border-white/20 hover:bg-surface2">
+            <a href="/teams/germany/" class="block">
+              <div class="mb-4 flex items-start gap-4">
+                <div class="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl border border-white/10 bg-inset text-lg font-bold text-white">DE</div>
+                <div>
+                  <h3 class="font-display text-4xl uppercase text-white">Germany</h3>
+                  <p class="text-[11px] font-semibold uppercase tracking-[0.22em] text-gold">Reset with upside</p>
+                </div>
+              </div>
+              <p class="text-sm leading-6 text-textSecondary">Germany remains compelling because it sits between tradition and transition, which often creates either fragility or sudden momentum.</p>
+              <p class="mt-4 text-xs uppercase tracking-[0.18em] text-textMuted">Tournament angle: structure meeting creativity</p>
+            </a>
+          </article>
+
+          <article class="rounded-2xl border border-white/10 bg-surface p-5 transition hover:border-white/20 hover:bg-surface2">
+            <a href="/teams/spain/" class="block">
+              <div class="mb-4 flex items-start gap-4">
+                <div class="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl border border-white/10 bg-inset text-lg font-bold text-white">ES</div>
+                <div>
+                  <h3 class="font-display text-4xl uppercase text-white">Spain</h3>
+                  <p class="text-[11px] font-semibold uppercase tracking-[0.22em] text-gold">Control-first side</p>
+                </div>
+              </div>
+              <p class="text-sm leading-6 text-textSecondary">Spain matters whenever match rhythm becomes the story, because few teams are as comfortable shaping tempo and territory for long stretches.</p>
+              <p class="mt-4 text-xs uppercase tracking-[0.18em] text-textMuted">Tournament angle: rhythm, possession, and patience</p>
+            </a>
+          </article>
+
+          <article class="rounded-2xl border border-white/10 bg-surface p-5 transition hover:border-white/20 hover:bg-surface2">
+            <a href="/teams/portugal/" class="block">
+              <div class="mb-4 flex items-start gap-4">
+                <div class="flex h-16 w-16 shrink-0 items-center justify-center rounded-2xl border border-white/10 bg-inset text-lg font-bold text-white">PT</div>
+                <div>
+                  <h3 class="font-display text-4xl uppercase text-white">Portugal</h3>
+                  <p class="text-[11px] font-semibold uppercase tracking-[0.22em] text-gold">Balanced contender</p>
+                </div>
+              </div>
+              <p class="text-sm leading-6 text-textSecondary">Portugal feels dangerous because it can attack with talent while still looking more stable than many teams with similar star power.</p>
+              <p class="mt-4 text-xs uppercase tracking-[0.18em] text-textMuted">Tournament angle: depth with attacking edge</p>
+            </a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-page py-14 sm:py-16">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="mb-8 max-w-3xl">
+          <p class="text-[11px] font-semibold uppercase tracking-[0.26em] text-gold">Favourites</p>
+          <h2 class="mt-2 font-display text-3xl uppercase text-white sm:text-4xl">Teams carrying the most obvious pre-tournament gravity</h2>
+        </div>
+        <div class="grid gap-5 lg:grid-cols-3">
+          <a href="/teams/france/" class="rounded-2xl border border-white/10 bg-surface p-6 transition hover:border-white/20 hover:bg-surface2">
+            <p class="text-[11px] font-semibold uppercase tracking-[0.22em] text-gold">France</p>
+            <h3 class="mt-2 font-display text-4xl uppercase text-white">Built for late rounds</h3>
+            <p class="mt-3 text-sm leading-6 text-textSecondary">Depth is one thing, but knowing what a match needs late on is another. France usually looks like a team with both.</p>
+          </a>
+          <a href="/teams/argentina/" class="rounded-2xl border border-white/10 bg-surface p-6 transition hover:border-white/20 hover:bg-surface2">
+            <p class="text-[11px] font-semibold uppercase tracking-[0.22em] text-gold">Argentina</p>
+            <h3 class="mt-2 font-display text-4xl uppercase text-white">Calm under tournament stress</h3>
+            <p class="mt-3 text-sm leading-6 text-textSecondary">Readers trust Argentina because the team often looks comfortable in the parts of tournament football that unsettle others.</p>
+          </a>
+          <a href="/teams/brazil/" class="rounded-2xl border border-white/10 bg-surface p-6 transition hover:border-white/20 hover:bg-surface2">
+            <p class="text-[11px] font-semibold uppercase tracking-[0.22em] text-gold">Brazil</p>
+            <h3 class="mt-2 font-display text-4xl uppercase text-white">Ceiling as high as anyone's</h3>
+            <p class="mt-3 text-sm leading-6 text-textSecondary">When Brazil looks connected in and out of possession, it immediately becomes one of the most difficult teams to frame against.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="border-y border-white/10 bg-shell py-14 sm:py-16">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="mb-8 max-w-3xl">
+          <p class="text-[11px] font-semibold uppercase tracking-[0.26em] text-gold">Dark horses</p>
+          <h2 class="mt-2 font-display text-3xl uppercase text-white sm:text-4xl">Teams that may arrive just outside the loudest spotlight</h2>
+        </div>
+        <div class="grid gap-5 md:grid-cols-2 xl:grid-cols-4">
+          <a href="/teams/uruguay/" class="rounded-2xl border border-white/10 bg-surface p-5 transition hover:border-white/20 hover:bg-surface2">
+            <h3 class="font-display text-4xl uppercase text-white">Uruguay</h3>
+            <p class="mt-2 text-[11px] font-semibold uppercase tracking-[0.22em] text-gold">Intensity and midfield edge</p>
+            <p class="mt-3 text-sm leading-6 text-textSecondary">Uruguay often feels close to becoming a real problem because its matches rarely look comfortable for opponents.</p>
+          </a>
+          <a href="/teams/netherlands/" class="rounded-2xl border border-white/10 bg-surface p-5 transition hover:border-white/20 hover:bg-surface2">
+            <h3 class="font-display text-4xl uppercase text-white">Netherlands</h3>
+            <p class="mt-2 text-[11px] font-semibold uppercase tracking-[0.22em] text-gold">Shape, width, and tournament craft</p>
+            <p class="mt-3 text-sm leading-6 text-textSecondary">This is the kind of team that can become more convincing with every round rather than more exposed.</p>
+          </a>
+          <a href="/teams/japan/" class="rounded-2xl border border-white/10 bg-surface p-5 transition hover:border-white/20 hover:bg-surface2">
+            <h3 class="font-display text-4xl uppercase text-white">Japan</h3>
+            <p class="mt-2 text-[11px] font-semibold uppercase tracking-[0.22em] text-gold">Discipline with real tactical bite</p>
+            <p class="mt-3 text-sm leading-6 text-textSecondary">Japan keeps making serious teams work, which is often the first sign that a dark-horse label is deserved.</p>
+          </a>
+          <a href="/teams/morocco/" class="rounded-2xl border border-white/10 bg-surface p-5 transition hover:border-white/20 hover:bg-surface2">
+            <h3 class="font-display text-4xl uppercase text-white">Morocco</h3>
+            <p class="mt-2 text-[11px] font-semibold uppercase tracking-[0.22em] text-gold">Energy, identity, and belief</p>
+            <p class="mt-3 text-sm leading-6 text-textSecondary">Momentum matters in World Cups, and Morocco can carry emotional force without losing competitive shape.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-page py-14 sm:py-16">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="mb-8 flex items-end justify-between gap-4">
+          <div>
+            <p class="text-[11px] font-semibold uppercase tracking-[0.26em] text-gold">Related players</p>
+            <h2 class="mt-2 font-display text-3xl uppercase text-white sm:text-4xl">Key footballers behind the team-level narratives</h2>
+          </div>
+          <a href="/players/" class="hidden text-sm font-semibold text-textSecondary transition hover:text-white sm:inline">Open players hub</a>
+        </div>
+
+        <div class="grid gap-5 md:grid-cols-2 xl:grid-cols-4">
+          <a href="/players/kylian-mbappe/" class="rounded-2xl border border-white/10 bg-surface p-6 transition hover:border-white/20 hover:bg-surface2">
+            <p class="text-[11px] font-semibold uppercase tracking-[0.22em] text-ice">France</p>
+            <h3 class="mt-2 font-display text-4xl uppercase text-white">Kylian Mbappé</h3>
+            <p class="mt-3 text-sm leading-6 text-textSecondary">A natural bridge from the France page into the player most readers associate with its attacking ceiling.</p>
+          </a>
+          <a href="/players/jude-bellingham/" class="rounded-2xl border border-white/10 bg-surface p-6 transition hover:border-white/20 hover:bg-surface2">
+            <p class="text-[11px] font-semibold uppercase tracking-[0.22em] text-ice">England</p>
+            <h3 class="mt-2 font-display text-4xl uppercase text-white">Jude Bellingham</h3>
+            <p class="mt-3 text-sm leading-6 text-textSecondary">The kind of player page that extends team interest into midfield authority, tempo, and expectation.</p>
+          </a>
+          <a href="/players/vinicius-junior/" class="rounded-2xl border border-white/10 bg-surface p-6 transition hover:border-white/20 hover:bg-surface2">
+            <p class="text-[11px] font-semibold uppercase tracking-[0.22em] text-ice">Brazil</p>
+            <h3 class="mt-2 font-display text-4xl uppercase text-white">Vinícius Júnior</h3>
+            <p class="mt-3 text-sm leading-6 text-textSecondary">A player link that turns Brazil's team-level promise into a more specific attacking story.</p>
+          </a>
+          <a href="/players/lionel-messi/" class="rounded-2xl border border-white/10 bg-surface p-6 transition hover:border-white/20 hover:bg-surface2">
+            <p class="text-[11px] font-semibold uppercase tracking-[0.22em] text-ice">Argentina</p>
+            <h3 class="mt-2 font-display text-4xl uppercase text-white">Lionel Messi</h3>
+            <p class="mt-3 text-sm leading-6 text-textSecondary">A player page readers expect to reach naturally from any serious Argentina overview.</p>
+          </a>
+        </div>
+
+        <div class="mt-10 flex flex-col gap-3 sm:flex-row">
+          <a href="/" class="inline-flex min-h-12 items-center justify-center rounded-lg border border-white/15 bg-white/5 px-6 py-3 text-sm font-semibold text-white transition hover:border-white/25 hover:bg-white/10">Back to Homepage</a>
+          <a href="/players/" class="inline-flex min-h-12 items-center justify-center rounded-lg bg-accent px-6 py-3 text-sm font-semibold text-white transition hover:bg-accentDeep">Go to Players Hub</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-white/10 bg-inset">
+    <div class="mx-auto grid max-w-7xl gap-10 px-4 py-12 sm:px-6 lg:grid-cols-[1.1fr_0.9fr_0.9fr] lg:px-8">
+      <div>
+        <p class="font-display text-3xl uppercase text-white">WC2026</p>
+        <p class="mt-3 max-w-md text-sm leading-6 text-textSecondary">A dark editorial football portal focused on team entities, leading players, and tournament context.</p>
+      </div>
+      <div>
+        <h2 class="text-xs font-semibold uppercase tracking-[0.22em] text-textMuted">Teams section</h2>
+        <ul class="mt-4 space-y-3 text-sm text-textSecondary">
+          <li><a href="/teams/france/" class="transition hover:text-white">France team page</a></li>
+          <li><a href="/teams/brazil/" class="transition hover:text-white">Brazil team page</a></li>
+          <li><a href="/teams/argentina/" class="transition hover:text-white">Argentina team page</a></li>
+          <li><a href="/teams/england/" class="transition hover:text-white">England team page</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="text-xs font-semibold uppercase tracking-[0.22em] text-textMuted">Main routes</h2>
+        <ul class="mt-4 space-y-3 text-sm text-textSecondary">
+          <li><a href="/" class="transition hover:text-white">Home</a></li>
+          <li><a href="/players/" class="transition hover:text-white">Players</a></li>
+          <li><a href="/world-cup-2026-format/" class="transition hover:text-white">World Cup 2026 Format</a></li>
+          <li><a href="/host-cities/" class="transition hover:text-white">Host Cities</a></li>
+          <li><a href="/faq/" class="transition hover:text-white">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-white/10">
+      <div class="mx-auto flex max-w-7xl flex-col gap-3 px-4 py-5 text-xs text-textMuted sm:px-6 lg:flex-row lg:items-center lg:justify-between lg:px-8">
+        <p>© 2026 WC2026 Players / Top Teams. Teams hub page concept.</p>
+        <p>Built as an editorial entity index with internal links, framed ad inventory, and multilingual routing readiness.</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>

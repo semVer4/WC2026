@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en" class="dark" data-country="{{CF_IPCOUNTRY}}">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FAQ | WC2026 Players / Top Teams</title>
+  <meta name="description" content="Read quick answers about World Cup 2026 players, teams, tournament format, host countries, host cities, and site navigation." />
+  <link rel="canonical" href="https://example.com/faq/" />
+  <meta property="og:title" content="FAQ | WC2026 Players / Top Teams" />
+  <meta property="og:description" content="A concise editorial FAQ page about World Cup 2026 basics, players, teams, host cities, and tournament format." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://example.com/faq/" />
+  <meta property="og:image" content="https://picsum.photos/seed/wc2026-faq-page/1600/900" />
+  <meta name="theme-color" content="#0b0f14" />
+  <meta name="x-geo-language-strategy" content="Server-provided country header bridge with browser-language fallback" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    window.__SITE_I18N__ = {
+      defaultLang: 'en',
+      supportedLangs: ['en', 'es', 'fr', 'de', 'pt', 'ru'],
+      countryToLang: {
+        US: 'en', CA: 'en', GB: 'en', AU: 'en', IE: 'en', NZ: 'en',
+        MX: 'es', ES: 'es', AR: 'es', CO: 'es', CL: 'es', PE: 'es', UY: 'es',
+        FR: 'fr', BE: 'fr', CH: 'fr', DE: 'de', AT: 'de', BR: 'pt', PT: 'pt',
+        RU: 'ru', BY: 'ru', KZ: 'ru'
+      }
+    };
+  </script>
+  <script>
+    (function () {
+      var cfg = window.__SITE_I18N__;
+      var path = window.location.pathname;
+      var langPrefixMatch = path.match(/^\/(en|es|fr|de|pt|ru)(\/|$)/i);
+      if (langPrefixMatch) return;
+      function pickByBrowser() {
+        var raw = (navigator.language || navigator.userLanguage || cfg.defaultLang).toLowerCase();
+        var short = raw.slice(0, 2);
+        return cfg.supportedLangs.indexOf(short) !== -1 ? short : cfg.defaultLang;
+      }
+      var country = document.documentElement.getAttribute('data-country') || '';
+      var targetLang = cfg.countryToLang[country] || pickByBrowser();
+      if (!targetLang || targetLang === cfg.defaultLang) return;
+      if (path === '/faq/' || path === '/faq/index.html') {
+        window.location.replace('/' + targetLang + '/faq/');
+      }
+    })();
+  </script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            page: '#0B0F14',
+            shell: '#11161D',
+            surface: '#161C24',
+            surface2: '#1B2330',
+            inset: '#0F141B',
+            line: '#273243',
+            textPrimary: '#F3F5F7',
+            textSecondary: '#B8C1CC',
+            textMuted: '#7E8A97',
+            accent: '#D72638',
+            accentDeep: '#8F1623',
+            gold: '#C8A85D',
+            ice: '#7FA9C9'
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            display: ['Barlow Condensed', 'sans-serif']
+          },
+          boxShadow: {
+            panel: '0 16px 40px rgba(0,0,0,0.24)',
+            soft: '0 10px 30px rgba(0,0,0,0.18)'
+          },
+          backgroundImage: {
+            'hero-overlay': 'linear-gradient(180deg, rgba(11,15,20,0.30) 0%, rgba(11,15,20,0.82) 58%, rgba(11,15,20,0.98) 100%)'
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-page text-textPrimary font-sans antialiased selection:bg-accent/30 selection:text-white">
+  <a href="#main-content" class="sr-only focus:not-sr-only focus:absolute focus:left-4 focus:top-4 focus:z-[100] focus:rounded-md focus:bg-accent focus:px-4 focus:py-2 focus:text-white">Skip to content</a>
+
+  <header class="sticky top-0 z-50 border-b border-white/10 bg-shell/95 backdrop-blur">
+    <div class="mx-auto flex max-w-7xl items-center justify-between gap-6 px-4 py-4 sm:px-6 lg:px-8">
+      <a href="/" class="flex items-end gap-3" aria-label="WC2026 Players / Top Teams home">
+        <span class="font-display text-3xl uppercase tracking-wide text-white">WC2026</span>
+        <span class="hidden text-xs font-semibold uppercase tracking-[0.24em] text-textMuted sm:block">Players / Top Teams</span>
+      </a>
+      <nav aria-label="Primary navigation" class="hidden items-center gap-6 md:flex">
+        <a href="/" class="text-sm font-medium text-textSecondary transition hover:text-white">Home</a>
+        <a href="/players/" class="text-sm font-medium text-textSecondary transition hover:text-white">Players</a>
+        <a href="/teams/" class="text-sm font-medium text-textSecondary transition hover:text-white">Teams</a>
+        <a href="/world-cup-2026-format/" class="text-sm font-medium text-textSecondary transition hover:text-white">Format</a>
+        <a href="/host-cities/" class="text-sm font-medium text-textSecondary transition hover:text-white">Host Cities</a>
+        <a href="/faq/" class="text-sm font-semibold text-white">FAQ</a>
+      </nav>
+      <div class="flex items-center gap-3">
+        <button type="button" aria-label="Search" class="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-white/10 bg-white/5 text-textSecondary transition hover:border-white/20 hover:bg-white/10 hover:text-white">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></svg>
+        </button>
+        <button type="button" aria-label="Open menu" class="inline-flex h-10 w-10 items-center justify-center rounded-lg border border-white/10 bg-white/5 text-textSecondary md:hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.8"><path d="M4 7h16M4 12h16M4 17h16"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="relative overflow-hidden border-b border-white/10 bg-shell">
+      <div class="absolute inset-0 bg-hero-overlay"></div>
+      <div class="absolute inset-0 bg-[url('https://avatars.mds.yandex.net/i?id=b556e53a91f1d4398f2f68d756c4b8bb_l-7761683-images-thumbs&n=13')] bg-cover bg-center opacity-25"></div>
+      <div class="relative mx-auto max-w-7xl px-4 py-10 sm:px-6 sm:py-14 lg:px-8 lg:py-20">
+        <nav aria-label="Breadcrumb" class="mb-6 text-sm text-textMuted">
+          <a href="/" class="transition hover:text-white">Home</a>
+          <span class="mx-2">/</span>
+          <span class="text-textSecondary">FAQ</span>
+        </nav>
+
+        <div class="grid gap-8 lg:grid-cols-[minmax(0,1fr)_320px] lg:items-end">
+          <div class="max-w-4xl">
+            <p class="mb-4 text-[11px] font-semibold uppercase tracking-[0.28em] text-gold">Information hub</p>
+            <h1 class="font-display text-5xl uppercase leading-none text-white sm:text-6xl lg:text-7xl">WC2026 FAQ</h1>
+            <p class="mt-5 max-w-3xl text-base leading-7 text-textSecondary sm:text-lg">This page answers the most common questions about World Cup 2026 players, teams, tournament format, host countries, host cities, and basic site navigation. The tournament will feature 48 teams, three host countries, and 16 host cities, so a concise FAQ helps readers move faster across the project. </p>
+            <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+              <a href="/players/" class="inline-flex min-h-12 items-center justify-center rounded-lg border border-white/15 bg-white/5 px-6 py-3 text-sm font-semibold text-white transition hover:border-white/25 hover:bg-white/10">Browse Players</a>
+              <a href="/teams/" class="inline-flex min-h-12 items-center justify-center rounded-lg bg-accent px-6 py-3 text-sm font-semibold text-white transition hover:bg-accentDeep">Browse Teams</a>
+            </div>
+          </div>
+
+          <aside class="rounded-2xl border border-white/10 bg-surface p-6 shadow-soft">
+            <p class="text-[11px] font-semibold uppercase tracking-[0.24em] text-gold">Quick links</p>
+            <div class="mt-5 space-y-3">
+              <a href="/world-cup-2026-format/" class="flex items-center justify-between rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3 text-sm font-medium text-white transition hover:border-white/20 hover:bg-white/[0.06]">
+                <span>Format page</span>
+                <span aria-hidden="true">→</span>
+              </a>
+              <a href="/host-cities/" class="flex items-center justify-between rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3 text-sm font-medium text-white transition hover:border-white/20 hover:bg-white/[0.06]">
+                <span>Host Cities</span>
+                <span aria-hidden="true">→</span>
+              </a>
+              <a href="/players/kylian-mbappe/" class="flex items-center justify-between rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3 text-sm font-medium text-white transition hover:border-white/20 hover:bg-white/[0.06]">
+                <span>Example player page</span>
+                <span aria-hidden="true">→</span>
+              </a>
+              <a href="/teams/france/" class="flex items-center justify-between rounded-xl border border-white/10 bg-white/[0.03] px-4 py-3 text-sm font-medium text-white transition hover:border-white/20 hover:bg-white/[0.06]">
+                <span>Example team page</span>
+                <span aria-hidden="true">→</span>
+              </a>
+            </div>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-page py-14 sm:py-16">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="mb-8 max-w-3xl">
+          <p class="text-[11px] font-semibold uppercase tracking-[0.26em] text-gold">Tournament basics</p>
+          <h2 class="mt-2 font-display text-4xl uppercase text-white">Core answers readers usually need first</h2>
+        </div>
+        <div class="grid gap-4 lg:grid-cols-2">
+          <article class="rounded-2xl border border-white/10 bg-surface p-5"><h3 class="text-lg font-semibold text-white">What is WC2026?</h3><p class="mt-2 text-sm leading-7 text-textSecondary">WC2026 refers to the 2026 FIFA World Cup, the next men's World Cup tournament. It is the first edition with 48 national teams. </p></article>
+          <article class="rounded-2xl border border-white/10 bg-surface p-5"><h3 class="text-lg font-semibold text-white">How many teams will play in the 2026 World Cup?</h3><p class="mt-2 text-sm leading-7 text-textSecondary">The 2026 World Cup will feature 48 teams, up from 32 in previous editions. </p></article>
+          <article class="rounded-2xl border border-white/10 bg-surface p-5"><h3 class="text-lg font-semibold text-white">Which countries are hosting the 2026 World Cup?</h3><p class="mt-2 text-sm leading-7 text-textSecondary">The host countries are the United States, Mexico, and Canada. </p></article>
+          <article class="rounded-2xl border border-white/10 bg-surface p-5"><h3 class="text-lg font-semibold text-white">How many host cities are there for World Cup 2026?</h3><p class="mt-2 text-sm leading-7 text-textSecondary">There are 16 host cities across the three host nations. </p></article>
+          <article class="rounded-2xl border border-white/10 bg-surface p-5"><h3 class="text-lg font-semibold text-white">What is the group-stage format for World Cup 2026?</h3><p class="mt-2 text-sm leading-7 text-textSecondary">The 48 teams are split into 12 groups of four. Each team plays three group matches. </p></article>
+          <article class="rounded-2xl border border-white/10 bg-surface p-5"><h3 class="text-lg font-semibold text-white">How do teams reach the knockout stage in 2026?</h3><p class="mt-2 text-sm leading-7 text-textSecondary">The top two teams in each group advance, and the eight best third-place teams also move on to the Round of 32. </p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="border-y border-white/10 bg-shell py-14 sm:py-16">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="rounded-[28px] border border-dashed border-white/15 bg-page p-4 sm:p-6">
+          <div class="mb-3 flex items-center justify-between gap-3">
+            <span class="text-[11px] font-semibold uppercase tracking-[0.26em] text-textMuted">Advertisement</span>
+            <span class="text-[11px] text-textMuted">Primary FAQ ad slot</span>
+          </div>
+          <div class="flex min-h-[200px] items-center justify-center rounded-2xl border border-white/10 bg-white/[0.03] text-center sm:min-h-[240px]">
+            <div>
+              <p class="font-display text-3xl uppercase tracking-wide text-white sm:text-5xl">In-content billboard</p>
+              <p class="mt-2 text-sm text-textSecondary">Reserved premium ad area inside the FAQ page.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-page py-14 sm:py-16">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="mb-8 max-w-3xl">
+          <p class="text-[11px] font-semibold uppercase tracking-[0.26em] text-gold">Players and teams</p>
+          <h2 class="mt-2 font-display text-4xl uppercase text-white">Questions about team pages and player profiles</h2>
+        </div>
+        <div class="grid gap-4 lg:grid-cols-2">
+          <article class="rounded-2xl border border-white/10 bg-surface p-5"><h3 class="text-lg font-semibold text-white">What can I find on the players page?</h3><p class="mt-2 text-sm leading-7 text-textSecondary">The players hub is designed to help readers discover notable footballers, move into player entity pages, and connect individual profiles with team narratives. <a href="/players/" class="font-medium text-white underline decoration-white/30 underline-offset-4 hover:decoration-white">Open Players</a>.</p></article>
+          <article class="rounded-2xl border border-white/10 bg-surface p-5"><h3 class="text-lg font-semibold text-white">What can I find on the teams page?</h3><p class="mt-2 text-sm leading-7 text-textSecondary">The teams hub focuses on national-team overviews, favourites, dark horses, and links to detailed team pages. <a href="/teams/" class="font-medium text-white underline decoration-white/30 underline-offset-4 hover:decoration-white">Open Teams</a>.</p></article>
+          <article class="rounded-2xl border border-white/10 bg-surface p-5"><h3 class="text-lg font-semibold text-white">Why does the site have separate pages for players and teams?</h3><p class="mt-2 text-sm leading-7 text-textSecondary">Separate player and team pages create cleaner navigation and stronger internal linking. They also let readers switch easily between individual profiles and national-team context.</p></article>
+          <article class="rounded-2xl border border-white/10 bg-surface p-5"><h3 class="text-lg font-semibold text-white">What is on a player profile page?</h3><p class="mt-2 text-sm leading-7 text-textSecondary">A player page includes a hero, quick facts, overview, playing style, strengths, World Cup angle, related team links, and related players. <a href="/players/kylian-mbappe/" class="font-medium text-white underline decoration-white/30 underline-offset-4 hover:decoration-white">See the Mbappé example</a>.</p></article>
+          <article class="rounded-2xl border border-white/10 bg-surface p-5"><h3 class="text-lg font-semibold text-white">What is on a team profile page?</h3><p class="mt-2 text-sm leading-7 text-textSecondary">A team page includes an overview, key players, tactical profile, road to the tournament, favourite angle, and related players. <a href="/teams/france/" class="font-medium text-white underline decoration-white/30 underline-offset-4 hover:decoration-white">See the France example</a>.</p></article>
+          <article class="rounded-2xl border border-white/10 bg-surface p-5"><h3 class="text-lg font-semibold text-white">Who are the most important player pages on this site?</h3><p class="mt-2 text-sm leading-7 text-textSecondary">The most important player pages are usually the ones tied to major contenders, breakout stars, captains, and high-interest attacking names. The project structure is built so those pages can function as strong entity hubs.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="border-y border-white/10 bg-shell py-14 sm:py-16">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="mb-8 max-w-3xl">
+          <p class="text-[11px] font-semibold uppercase tracking-[0.26em] text-gold">Format and host cities</p>
+          <h2 class="mt-2 font-display text-4xl uppercase text-white">Questions about structure, cities, and navigation</h2>
+        </div>
+        <div class="grid gap-4 lg:grid-cols-2">
+          <article class="rounded-2xl border border-white/10 bg-surface p-5"><h3 class="text-lg font-semibold text-white">Where can I read about the World Cup 2026 format?</h3><p class="mt-2 text-sm leading-7 text-textSecondary">The format page explains the 48-team setup, 12 groups, host countries, host cities, and knockout structure. <a href="/world-cup-2026-format/" class="font-medium text-white underline decoration-white/30 underline-offset-4 hover:decoration-white">Open the format guide</a>.</p></article>
+          <article class="rounded-2xl border border-white/10 bg-surface p-5"><h3 class="text-lg font-semibold text-white">Where can I find the host cities?</h3><p class="mt-2 text-sm leading-7 text-textSecondary">The host cities page is the best place to browse the tournament locations across the USA, Mexico, and Canada. <a href="/host-cities/" class="font-medium text-white underline decoration-white/30 underline-offset-4 hover:decoration-white">Open Host Cities</a>.</p></article>
+          <article class="rounded-2xl border border-white/10 bg-surface p-5"><h3 class="text-lg font-semibold text-white">Why are host cities important in World Cup 2026?</h3><p class="mt-2 text-sm leading-7 text-textSecondary">Host cities matter more than usual in 2026 because the tournament spans three countries and 16 different locations. That scale affects travel, atmosphere, and editorial coverage. </p></article>
+          <article class="rounded-2xl border border-white/10 bg-surface p-5"><h3 class="text-lg font-semibold text-white">How many matches will be played at World Cup 2026?</h3><p class="mt-2 text-sm leading-7 text-textSecondary">The expanded tournament will feature 104 matches in total. </p></article>
+          <article class="rounded-2xl border border-white/10 bg-surface p-5"><h3 class="text-lg font-semibold text-white">Will the 2026 World Cup have a Round of 32?</h3><p class="mt-2 text-sm leading-7 text-textSecondary">Yes. The new 48-team structure introduces a Round of 32 before the Round of 16. </p></article>
+          <article class="rounded-2xl border border-white/10 bg-surface p-5"><h3 class="text-lg font-semibold text-white">Why does this site link players, teams, and format pages together?</h3><p class="mt-2 text-sm leading-7 text-textSecondary">Those links help readers move from broad tournament questions to team pages and then into individual player entities without losing context.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-page py-14 sm:py-16">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="mb-8 max-w-3xl">
+          <p class="text-[11px] font-semibold uppercase tracking-[0.26em] text-gold">Site usage</p>
+          <h2 class="mt-2 font-display text-4xl uppercase text-white">Short questions about how to use the project</h2>
+        </div>
+        <div class="grid gap-4 lg:grid-cols-2">
+          <article class="rounded-2xl border border-white/10 bg-surface p-5"><h3 class="text-lg font-semibold text-white">Is this FAQ page a legal or policy page?</h3><p class="mt-2 text-sm leading-7 text-textSecondary">No. This is an informational FAQ designed to answer common editorial and navigation questions about the tournament and the site.</p></article>
+          <article class="rounded-2xl border border-white/10 bg-surface p-5"><h3 class="text-lg font-semibold text-white">Is the FAQ useful for SEO?</h3><p class="mt-2 text-sm leading-7 text-textSecondary">Yes. A focused FAQ can help cover long-tail informational queries about players, teams, format, and host cities while improving internal linking structure.</p></article>
+          <article class="rounded-2xl border border-white/10 bg-surface p-5"><h3 class="text-lg font-semibold text-white">What should I read first if I am new to the site?</h3><p class="mt-2 text-sm leading-7 text-textSecondary">Start with the teams hub if you think in national-team terms, or the players hub if you are looking for individual stars and profiles.</p></article>
+          <article class="rounded-2xl border border-white/10 bg-surface p-5"><h3 class="text-lg font-semibold text-white">What should I read if I want the tournament explained quickly?</h3><p class="mt-2 text-sm leading-7 text-textSecondary">The format page is the fastest route if you want a clean explanation of the 48-team setup, host countries, host cities, and knockout path. <a href="/world-cup-2026-format/" class="font-medium text-white underline decoration-white/30 underline-offset-4 hover:decoration-white">Open Format</a>.</p></article>
+          <article class="rounded-2xl border border-white/10 bg-surface p-5"><h3 class="text-lg font-semibold text-white">Does the site cover both favourites and dark horses?</h3><p class="mt-2 text-sm leading-7 text-textSecondary">Yes. The teams architecture is designed to cover leading contenders, dark horses, and the players most connected to those storylines.</p></article>
+          <article class="rounded-2xl border border-white/10 bg-surface p-5"><h3 class="text-lg font-semibold text-white">Where should I go after this FAQ page?</h3><p class="mt-2 text-sm leading-7 text-textSecondary">A good next step is the teams hub, the players hub, or the World Cup 2026 format page depending on whether you want entities or tournament context. <a href="/teams/" class="font-medium text-white underline decoration-white/30 underline-offset-4 hover:decoration-white">Teams</a> · <a href="/players/" class="font-medium text-white underline decoration-white/30 underline-offset-4 hover:decoration-white">Players</a> · <a href="/world-cup-2026-format/" class="font-medium text-white underline decoration-white/30 underline-offset-4 hover:decoration-white">Format</a>.</p></article>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="border-t border-white/10 bg-inset">
+    <div class="mx-auto grid max-w-7xl gap-10 px-4 py-12 sm:px-6 lg:grid-cols-[1.1fr_0.9fr_0.9fr] lg:px-8">
+      <div>
+        <p class="font-display text-3xl uppercase text-white">WC2026</p>
+        <p class="mt-3 max-w-md text-sm leading-6 text-textSecondary">A dark editorial football portal focused on players, teams, tournament format, and host-city context.</p>
+      </div>
+      <div>
+        <h2 class="text-xs font-semibold uppercase tracking-[0.22em] text-textMuted">FAQ links</h2>
+        <ul class="mt-4 space-y-3 text-sm text-textSecondary">
+          <li><a href="/teams/" class="transition hover:text-white">Teams hub</a></li>
+          <li><a href="/players/" class="transition hover:text-white">Players hub</a></li>
+          <li><a href="/world-cup-2026-format/" class="transition hover:text-white">Format page</a></li>
+          <li><a href="/host-cities/" class="transition hover:text-white">Host Cities</a></li>
+        </ul>
+      </div>
+      <div>
+        <h2 class="text-xs font-semibold uppercase tracking-[0.22em] text-textMuted">Main routes</h2>
+        <ul class="mt-4 space-y-3 text-sm text-textSecondary">
+          <li><a href="/" class="transition hover:text-white">Home</a></li>
+          <li><a href="/teams/france/" class="transition hover:text-white">France</a></li>
+          <li><a href="/players/kylian-mbappe/" class="transition hover:text-white">Kylian Mbappé</a></li>
+          <li><a href="/faq/" class="transition hover:text-white">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="border-t border-white/10">
+      <div class="mx-auto flex max-w-7xl flex-col gap-3 px-4 py-5 text-xs text-textMuted sm:px-6 lg:flex-row lg:items-center lg:justify-between lg:px-8">
+        <p>© 2026 WC2026 Players / Top Teams. Informational FAQ page.</p>
+        <p>Built around the confirmed 2026 World Cup structure with 48 teams, 3 host countries, and 16 host cities. </p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
