@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-label="Soccer ball">
+  <rect width="160" height="160" rx="20" fill="#161f3d"/>
+  <g transform="translate(80,80)">
+    <circle r="52" fill="#fff"/>
+    <path d="M0 -25 l23 17 -9 27 -28 0 -9 -27 Z" fill="#10131c"/>
+    <path d="M0 -52 l14 20 -14 8 -14 -8 Z" fill="#10131c"/>
+    <path d="M52 0 l-20 11 -3 -17 17 -12 Z" fill="#10131c"/>
+    <path d="M-52 0 l20 11 3 -17 -17 -12 Z" fill="#10131c"/>
+    <path d="M-28 41 l9 -18 18 0 9 18 -18 12 Z" fill="#10131c"/>
+    <circle r="52" fill="none" stroke="#c9d3ec" stroke-width="2"/>
+  </g>
+</svg>

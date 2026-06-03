@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-label="Football pitch">
+  <rect width="160" height="160" rx="20" fill="#0f6a39"/>
+  <rect x="6" y="6" width="148" height="148" rx="14" fill="none" stroke="#bff3d2" stroke-width="2" opacity="0.6"/>
+  <line x1="80" y1="6" x2="80" y2="154" stroke="#bff3d2" stroke-width="2" opacity="0.6"/>
+  <circle cx="80" cy="80" r="26" fill="none" stroke="#bff3d2" stroke-width="2" opacity="0.6"/>
+  <circle cx="80" cy="80" r="3" fill="#bff3d2" opacity="0.8"/>
+  <rect x="6" y="50" width="26" height="60" fill="none" stroke="#bff3d2" stroke-width="2" opacity="0.6"/>
+  <rect x="128" y="50" width="26" height="60" fill="none" stroke="#bff3d2" stroke-width="2" opacity="0.6"/>
+  <g fill="#178a4c" opacity="0.4">
+    <rect x="6" y="6" width="20" height="148"/><rect x="46" y="6" width="20" height="148"/><rect x="86" y="6" width="20" height="148"/><rect x="126" y="6" width="20" height="148"/>
+  </g>
+</svg>

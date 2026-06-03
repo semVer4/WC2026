@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" role="img" aria-label="World Cup 2026 Predictions">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#16224a"/><stop offset="1" stop-color="#0b1020"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffe08a"/><stop offset="1" stop-color="#e0a92b"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="980" cy="150" r="320" fill="#1f6feb" opacity="0.10"/>
+  <circle cx="1050" cy="520" r="200" fill="#19c37d" opacity="0.10"/>
+
+  <text x="80" y="170" font-family="Arial, sans-serif" font-size="34" font-weight="700" letter-spacing="6" fill="#19c37d">USA · CANADA · MEXICO · 2026</text>
+  <text x="76" y="300" font-family="Arial, sans-serif" font-size="92" font-weight="800" fill="#ffffff">World Cup 2026</text>
+  <text x="80" y="400" font-family="Arial, sans-serif" font-size="92" font-weight="800" fill="url(#gold)">Predictions &amp; Odds</text>
+  <text x="80" y="470" font-family="Arial, sans-serif" font-size="32" fill="#9aa6c7">Winner picks · Group tips · Dark horses · 48 teams · 104 matches</text>
+
+  <!-- ball -->
+  <g transform="translate(1000,420)">
+    <circle r="90" fill="#fff"/>
+    <path d="M0 -42 l40 30 -16 47 -48 0 -16 -47 Z" fill="#10131c"/>
+    <path d="M0 -90 l24 34 -24 14 -24 -14 Z" fill="#10131c"/>
+    <path d="M90 0 l-34 19 -5 -29 29 -20 Z" fill="#10131c"/>
+    <path d="M-90 0 l34 19 5 -29 -29 -20 Z" fill="#10131c"/>
+  </g>
+</svg>

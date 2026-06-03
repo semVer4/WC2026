@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 520" role="img" aria-label="World Cup 2026 stadium with trophy and ball">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1b2a55"/>
+      <stop offset="1" stop-color="#0d1430"/>
+    </linearGradient>
+    <linearGradient id="pitch" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1f9d57"/>
+      <stop offset="1" stop-color="#0f6a39"/>
+    </linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffe08a"/>
+      <stop offset="1" stop-color="#e0a92b"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="0.5" cy="0.35" r="0.7">
+      <stop offset="0" stop-color="#2a3e7a" stop-opacity="0.9"/>
+      <stop offset="1" stop-color="#0d1430" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+
+  <!-- sky -->
+  <rect width="640" height="520" rx="20" fill="url(#sky)"/>
+  <rect width="640" height="520" rx="20" fill="url(#glow)"/>
+
+  <!-- floodlights -->
+  <g opacity="0.9">
+    <rect x="70" y="60" width="6" height="120" fill="#3a4a7d"/>
+    <rect x="50" y="44" width="46" height="22" rx="4" fill="#566aa6"/>
+    <circle cx="60" cy="55" r="3" fill="#fff" opacity="0.8"/><circle cx="72" cy="55" r="3" fill="#fff" opacity="0.8"/><circle cx="84" cy="55" r="3" fill="#fff" opacity="0.8"/>
+    <rect x="564" y="60" width="6" height="120" fill="#3a4a7d"/>
+    <rect x="544" y="44" width="46" height="22" rx="4" fill="#566aa6"/>
+    <circle cx="554" cy="55" r="3" fill="#fff" opacity="0.8"/><circle cx="566" cy="55" r="3" fill="#fff" opacity="0.8"/><circle cx="578" cy="55" r="3" fill="#fff" opacity="0.8"/>
+  </g>
+
+  <!-- stadium stands -->
+  <path d="M40 250 Q320 150 600 250 L600 300 Q320 210 40 300 Z" fill="#26356a"/>
+  <path d="M40 250 Q320 150 600 250" fill="none" stroke="#3c4f8f" stroke-width="2"/>
+  <!-- crowd dots -->
+  <g fill="#5468a6" opacity="0.7">
+    <circle cx="120" cy="232" r="3"/><circle cx="160" cy="222" r="3"/><circle cx="210" cy="212" r="3"/><circle cx="270" cy="205" r="3"/><circle cx="330" cy="203" r="3"/><circle cx="390" cy="206" r="3"/><circle cx="450" cy="214" r="3"/><circle cx="500" cy="224" r="3"/><circle cx="540" cy="234" r="3"/>
+    <circle cx="140" cy="248" r="3"/><circle cx="200" cy="236" r="3"/><circle cx="260" cy="228" r="3"/><circle cx="320" cy="225" r="3"/><circle cx="380" cy="228" r="3"/><circle cx="440" cy="236" r="3"/><circle cx="500" cy="248" r="3"/>
+  </g>
+
+  <!-- pitch -->
+  <path d="M40 470 Q320 300 600 470 L600 500 L40 500 Z" fill="url(#pitch)"/>
+  <ellipse cx="320" cy="430" rx="250" ry="70" fill="#178a4c" opacity="0.5"/>
+  <!-- pitch lines -->
+  <ellipse cx="320" cy="432" rx="70" ry="20" fill="none" stroke="#bff3d2" stroke-width="2" opacity="0.6"/>
+  <line x1="320" y1="360" x2="320" y2="500" stroke="#bff3d2" stroke-width="2" opacity="0.5"/>
+
+  <!-- confetti -->
+  <g opacity="0.9">
+    <rect x="150" y="120" width="8" height="8" rx="2" fill="#19c37d" transform="rotate(20 154 124)"/>
+    <rect x="470" y="100" width="8" height="8" rx="2" fill="#1f6feb" transform="rotate(-15 474 104)"/>
+    <rect x="240" y="90" width="7" height="7" rx="2" fill="#f3c34a" transform="rotate(35 243 93)"/>
+    <rect x="400" y="150" width="7" height="7" rx="2" fill="#ff5d5d" transform="rotate(10 403 153)"/>
+    <rect x="520" y="160" width="7" height="7" rx="2" fill="#19c37d" transform="rotate(40 523 163)"/>
+    <rect x="110" y="170" width="7" height="7" rx="2" fill="#f3c34a" transform="rotate(-25 113 173)"/>
+  </g>
+
+  <!-- trophy -->
+  <g transform="translate(248,250)">
+    <path d="M40 0 H104 V18 Q104 70 72 86 Q40 70 40 18 Z" fill="url(#gold)"/>
+    <path d="M40 6 Q8 6 8 34 Q8 60 44 60" fill="none" stroke="url(#gold)" stroke-width="9"/>
+    <path d="M104 6 Q136 6 136 34 Q136 60 100 60" fill="none" stroke="url(#gold)" stroke-width="9"/>
+    <rect x="60" y="86" width="24" height="20" fill="#cf9a26"/>
+    <rect x="46" y="106" width="52" height="12" rx="3" fill="url(#gold)"/>
+    <rect x="38" y="118" width="68" height="14" rx="3" fill="#cf9a26"/>
+    <path d="M60 18 q12 14 24 0" fill="none" stroke="#fff6d8" stroke-width="3" opacity="0.7"/>
+  </g>
+
+  <!-- soccer ball -->
+  <g transform="translate(150,392)">
+    <circle cx="0" cy="0" r="34" fill="#ffffff"/>
+    <circle cx="0" cy="0" r="34" fill="none" stroke="#0f6a39" stroke-width="2" opacity="0.4"/>
+    <path d="M0 -16 l15 11 -6 18 -18 0 -6 -18 Z" fill="#10131c"/>
+    <path d="M0 -34 l9 13 -9 5 -9 -5 Z" fill="#10131c"/>
+    <path d="M34 0 l-13 7 -2 -11 11 -8 Z" fill="#10131c" opacity="0.85"/>
+    <path d="M-34 0 l13 7 2 -11 -11 -8 Z" fill="#10131c" opacity="0.85"/>
+    <path d="M-18 27 l6 -12 12 0 6 12 -12 8 Z" fill="#10131c" opacity="0.85"/>
+  </g>
+
+  <!-- 2026 watermark -->
+  <text x="430" y="430" font-family="Arial, sans-serif" font-size="58" font-weight="800" fill="#ffffff" opacity="0.08">2026</text>
+</svg>

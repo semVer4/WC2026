@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-label="Trophy">
+  <defs>
+    <linearGradient id="g" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffe08a"/><stop offset="1" stop-color="#e0a92b"/>
+    </linearGradient>
+  </defs>
+  <rect width="160" height="160" rx="20" fill="#161f3d"/>
+  <g transform="translate(34,30)">
+    <path d="M28 0 H64 V14 Q64 52 46 64 Q28 52 28 14 Z" fill="url(#g)"/>
+    <path d="M28 5 Q4 5 4 26 Q4 46 32 46" fill="none" stroke="url(#g)" stroke-width="7"/>
+    <path d="M64 5 Q88 5 88 26 Q88 46 60 46" fill="none" stroke="url(#g)" stroke-width="7"/>
+    <rect x="40" y="64" width="12" height="16" fill="#cf9a26"/>
+    <rect x="30" y="80" width="32" height="9" rx="2" fill="url(#g)"/>
+    <rect x="24" y="89" width="44" height="11" rx="2" fill="#cf9a26"/>
+  </g>
+</svg>
